@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Fake Review Detector</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+
+        <link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="static/css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="static/css/owl.carousel.min.css" rel="stylesheet">
+
+        <link href="static/css/owl.theme.default.min.css" rel="stylesheet">
+
+        <link href="static/css/tooplate-gotto-job.css" rel="stylesheet">
+        
+    </head>
+    
+    <body id="top">
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="C:\Users\abayk\OneDrive\Desktop\fake\templates\index.html">
+                    <img src="static/images/review.png" class="img-fluid logo-image">
+
+                    <div class="d-flex flex-column">
+                        <strong class="logo-text" style="font-family:Agency FB;">REVIEW GUARD </strong>
+                        <small class="logo-slogan"style="font-family:copperplate Gothic;color:black;">Fake Review Detection</small>
+                    </div>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav align-items-center ms-lg-5">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section2"style="font-family:GT Pressura;"><b>Homepage</b></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section1"style="font-family:GT Pressura;"><b>Check Model Details</b></a>
+                        </li>
+
+                        <!-- <li class="nav-item">
+                            <a class="nav-link custom-btn btn" href="#">Home</a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="justify-content-center align-items-center">
+
+            <section class="hero-section d-flex justify-content-center align-items-center">
+                <div class="section-overlay"></div>
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+                            <div class="hero-section-text mt-5">
+                                <section id="section2">
+                                <h6 class="text-white">Confused about the genuinity of review?</h6>
+</section>
+                                <h1 class="hero-title text-white mt-4 mb-4">Fake Review <br> Detector</h1>
+
+                                <a href="#categories-section" class="custom-btn custom-border-btn btn">Check Model</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <form class="custom-form hero-form" action="/process_review" method="post" role="form">
+                                <h3 class="text-white mb-3">Check Your Review</h3>
+                        
+                                <div class="row">
+                                    <div class="col-lg-12 col-12">
+                                        <textarea class="text_area" name="review_text" id="review-input" rows="5" cols="60" placeholder="  Paste the review text here..."></textarea>
+                                        <section id="model-selection" class="model_selection">
+                                            <label for="model-select"><i class="fas fa-cogs"></i> Choose a Detection Model:</label>
+                                            <select id="model-select" name="model_select">
+                                                <option value="model1"style="font-family:GT Pressura;">ANN</option>
+                                                <option value="model2"style="font-family:GT Pressura;">Random Forest</option>
+                                                <option value="model3"style="font-family:GT Pressura;">Decision Tree</option>
+                                                <option value="model3"style="font-family:GT Pressura;">SVM</option>
+                                            </select>
+                                        </section>
+                                    </div>
+                        
+                                    <div class="col-lg-12 col-12">
+                                    <a href="#section_button">
+                                        <button type="submit" class="form-control">Check</button>
+                                    </a>
+                                    </div>
+                        
+                                  
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="categories-section section-padding" id="categories-section">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center">
+
+                        <div class="col-lg-12 col-12 text-center">
+                            <h2 class="mb-5">Model<span> Category</span></h2>
+                        </div>
+
+
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <div class="categories-block">
+                                <a href="C:\Users\abayk\OneDrive\Desktop\fake\templates\about.html" class="d-flex flex-column justify-content-center align-items-center h-100">
+                                    <i class="categories-icon bi-window"></i>
+                                
+                                    <small class="categories-block-title">Deep Learning"</small>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <div class="categories-block">
+                                <a href="#" class="d-flex flex-column justify-content-center align-items-center h-100">
+                                    <i class="categories-icon bi-twitch"></i>
+                                
+                                    <small class="categories-block-title">Machine Learning</small>
+
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section id="section_button">
+            {% if result %}
+            <section class="about-section justify-content-center align-items-center width=700px">
+                
+                <div class="container">
+                        <div class="custom-text-block">
+                            <div id="review-result" class="mt-4">
+                               <div class="text_review"><h4>Review : {{ text }}</h4></div> 
+                            <div class="alert alert-info justify-content-center align-items-center">
+                                <h3>Review Result: {{ result }}</h3> 
+                                <i class="fa fa-{{ 'thumbs-up' if result == 'Genuine' else 'thumbs-down' }}"></i>
+                            </div>
+                
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {% endif %}
+
+
+            <section class="job-section job-featured-section section-padding" id="job-section">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12 text-center mx-auto mb-4">
+                           <section id="section1">
+                            <h2>Model Details</h2>
+</section>
+                        </div>
+
+                        <div class="col-lg-12 col-12">
+                            <div class="job-thumb d-flex">
+                                <div class="job-image-wrap bg-white shadow-lg">
+                                    <img src="static/images/svm.webp" class="job-image img-fluid" alt="">
+                                </div>
+
+                                <div class="job-body d-flex flex-wrap flex-auto align-items-center ms-4">
+                                    <div class="mb-3">
+                                        <h4 class="job-title mb-lg-0">
+                                            <a class="job-title-link">Suppor Vector Machine</a>
+                                        </h4>
+
+                                        <div class="d-flex flex-wrap align-items-center">
+                                            <p class="job-location mb-0">
+                                                <i class="custom-icon bi-award-fill me-1"></i>
+                                                Accuracy : 82.28%
+                                            </p>
+
+                                            <p class="job-date mb-0">
+                                                <i class="custom-icon bi-award me-1"></i>
+                                                Precision : 82%
+                                            </p>
+
+                                            <p class="job-price mb-0">
+                                                <i class="custom-icon bi-award-fill me-1"></i>
+                                                Recall : 82%
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="job-thumb d-flex">
+                                <div class="job-image-wrap bg-white shadow-lg">
+                                    <img src="static/images/decision.png" class="job-image img-fluid" alt="">
+                                </div>
+
+                                <div class="job-body d-flex flex-wrap flex-auto align-items-center ms-4">
+                                    <div class="mb-3">
+                                        <h4 class="job-title mb-lg-0">
+                                            <a class="job-title-link">Decision Tree Classifier</a>
+                                        </h4>
+
+                                        <div class="d-flex flex-wrap align-items-center">
+                                            <p class="job-location mb-0">
+                                                <i class="custom-icon bi-award-fill me-1"></i>
+                                                Accuracy : 73.49%
+                                            </p>
+
+                                            <p class="job-date mb-0">
+                                                <i class="custom-icon bi-award me-1"></i>
+                                                Precision : 70%
+                                            </p>
+
+                                            <p class="job-price mb-0">
+                                                <i class="custom-icon bi-award-fill me-1"></i>
+                                                Recall : 81%
+                                            </p>
+
+                
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="job-thumb d-flex">
+                                <div class="job-image-wrap bg-white shadow-lg">
+                                    <img src="static/images/rf.png" class="job-image img-fluid" alt="">
+                                </div>
+
+                                <div class="job-body d-flex flex-wrap flex-auto align-items-center ms-4">
+                                    <div class="mb-3">
+                                        <h4 class="job-title mb-lg-0">
+                                            <a class="job-title-link">Random Forest Classsifier</a>
+                                        </h4>
+
+                                        <div class="d-flex flex-wrap align-items-center">
+                                            <p class="job-location mb-0">
+                                                <i class="custom-icon bi-award-fill me-1"></i>
+                                                Accuracy : 83.86%
+                                            </p>
+
+                                            <p class="job-date mb-0">
+                                                <i class="custom-icon bi-award me-1"></i>
+                                                Precision : 84%
+                                            </p>
+
+                                            <p class="job-price mb-0">
+                                                <i class="custom-icon bi-award-fill me-1"></i>
+                                                Recall : 84%
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="job-thumb d-flex">
+                                <div class="job-image-wrap bg-white shadow-lg">
+                                    <img src="static/images/ann.png" class="job-image img-fluid" alt="">
+                                </div>
+
+                                <div class="job-body d-flex flex-wrap flex-auto align-items-center ms-4">
+                                    <div class="mb-3">
+                                        <h4 class="job-title mb-lg-0">
+                                            <a class="job-title-link">Artificial Neural Network</a>
+                                        </h4>
+
+                                        <div class="d-flex flex-wrap align-items-center">
+                                            <p class="job-location mb-0">
+                                                <i class="custom-icon bi-award-fill me-1"></i>
+                                                Accuracy : 82.1%
+                                            </p>
+
+                                            <p class="job-date mb-0">
+                                                <i class="custom-icon bi-award me-1"></i>
+                                                Precision : 82%
+                                            </p>
+
+                                            <p class="job-price mb-0">
+                                                <i class="custom-icon bi-award-fill me-1"></i>
+                                                Recall : 82%
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="site-footer">
+
+            <div class="site-footer-bottom">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-4 col-12 d-flex align-items-center">
+                            <p class="copyright-text">Copyright © 2023</p>
+
+                            <ul class="footer-menu d-flex">
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-link">Privacy Policy</a></li>
+
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-link">Terms</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-5 col-12 mt-2 mt-lg-0">
+                            <ul class="social-icon">
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-twitter"></a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-facebook"></a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-linkedin"></a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-instagram"></a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-youtube"></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <a class="back-top-icon bi-arrow-up smoothscroll d-flex justify-content-center align-items-center" href="#top"></a>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="static/js/jquery.min.js"></script>
+        <script src="static/js/bootstrap.min.js"></script>
+        <script src="static/js/owl.carousel.min.js"></script>
+        <script src="static/js/counter.js"></script>
+        <script src="static/js/custom.js"></script>
+ <script>
+        // JavaScript code to handle form submission and scrolling to results section
+        document.getElementById("checkButton").addEventListener("click", function(event){
+            event.preventDefault(); // Prevent default form submission
+            document.getElementById("reviewForm").submit(); // Submit the form
+            scrollToResults(); // Scroll to the results section
+        });
+
+        function scrollToResults() {
+            var resultsSection = document.getElementById("section_button"); // Change "section_button" to the id of your results section
+            resultsSection.scrollIntoView({ behavior: 'smooth' }); // Scroll smoothly to the results section
+        }
+    </script>
+
+
+
+    </body>
+</html>
